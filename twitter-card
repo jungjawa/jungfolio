@@ -1,0 +1,20 @@
+    <meta content='summary_large_image' name='twitter:card'/>
+    <meta content='@justinlandhiani' name='twitter:site'/>
+    <meta content='@justinlandhiani' name='twitter:creator'/>
+
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+     <meta expr:content='data:blog.url' name='twitter:url'/>
+      <meta expr:content='data:blog.pageName' name='twitter:title'/>
+      <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+      <b:else/>
+      <meta expr:content='data:blog.homepageUrl' name='twitter:url'/>
+      <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+ </b:if>
+
+<b:if cond='data:blog.postImageUrl'>
+      <meta expr:content='data:blog.postImageUrl' name='twitter:image'/>
+      <meta expr:content='data:blog.pageName' name='twitter:title'/>
+      <b:else/>
+      <meta content='http://www.justicious.blogspot.com/favicon.ico' name='twitter:image'/>
+      <meta expr:content='data:blog.title' name='twitter:title'/>
+ </b:if>
